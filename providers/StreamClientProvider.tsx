@@ -32,6 +32,7 @@ const StreamVideoProvider = ({ children }: { children: ReactNode }) => {
       tokenProvider,
     });
 
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setVideoClient(client);
   }, [user, isLoaded]);
 
